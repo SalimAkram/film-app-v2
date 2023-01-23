@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "e2e"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace film-app-v2-client build",
+    "dev": "yarn workspace film-app-v2-server dev",
+    "dev:debug": "yarn workspace film-app-v2-server dev:debug",
+    "heroku-postbuild": "yarn workspace film-app-v2-client build",
+    "start": "yarn workspace film-app-v2-server start",
+    "dev:cypress": "yarn workspace film-app-v2-server dev:e2e",
+    "e2e:open": "yarn workspace film-app-v2-e2e e2e:open",
+    "e2e:run": "yarn workspace film-app-v2-e2e e2e:run"
+  },
+  "engines": {
+    "node": "^16.18"
+  }
+}
