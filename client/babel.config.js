@@ -35,6 +35,18 @@ module.exports = function (api) {
       require("@babel/plugin-syntax-dynamic-import").default,
       require("@babel/plugin-transform-destructuring").default,
       [
+        require("@babel/plugin-proposal-private-property-in-object").default,
+        {
+          loose: true,
+        },
+      ],
+      [
+        require("@babel/plugin-proposal-private-methods").default,
+        {
+          loose: true,
+        },
+      ],
+      [
         require("@babel/plugin-proposal-class-properties").default,
         {
           loose: true,
