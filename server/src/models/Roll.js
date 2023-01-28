@@ -3,8 +3,8 @@ const uniqueFactory = require("objection-unique");
 
 const unique = uniqueFactory({
   fields: ["rollName"],
-  identifiers: ["id"]
-})
+  identifiers: ["id"],
+});
 
 class Roll extends unique(Model) {
   static get tableName() {
@@ -21,7 +21,7 @@ class Roll extends unique(Model) {
         cameraSetup: { type: "string" },
         weather: { type: "string" },
         notes: { type: "string" },
-        cameraIso: { type: ["string", "integer"] },
+        cameraIso: { type: "integer" },
         loadDate: { type: "date" },
         unloadDate: { type: "date" },
       },
@@ -62,4 +62,4 @@ class Roll extends unique(Model) {
   }
 }
 
-module.exports = Roll
+module.exports = Roll;

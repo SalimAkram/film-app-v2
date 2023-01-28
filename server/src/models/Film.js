@@ -8,7 +8,7 @@ const unique = uniqueFactory({
 
 class Film extends unique(Model) {
   static get tableName() {
-    return "films"
+    return "films";
   }
 
   static get jsonSchema() {
@@ -17,9 +17,9 @@ class Film extends unique(Model) {
       required: ["brand", "filmName", "iso", "format"],
       properties: {
         brand: { type: "string" },
-        filmName: { type: "string " },
-        iso: { type: ["integer", "string"] },
-        format: { type: ["string"] },
+        filmName: { type: "string" },
+        iso: { type: "integer" },
+        format: { type: "string" },
       },
     };
   }

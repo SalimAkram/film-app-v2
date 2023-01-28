@@ -17,5 +17,9 @@
     "titleBar.inactiveForeground": "#e7e7e799"
   },
   "peacock.color": "#215732",
-  "window.title": "${activeEditorShort}${separator}film-app-v2${separator}${rootName}"
+  "window.title": "${activeEditorShort}${separator}film-app-v2${separator}${rootName}",
+  "cSpell.words": [
+    "Aperature",
+    "knexfile"
+  ]
 }

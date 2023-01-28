@@ -10,9 +10,9 @@ class Frame extends Model {
       type: "object",
       required: ["aperature", "shutterSpeed"],
       properties: {
-        aperature: { type: ["integer", "string"] },
-        shutterSpeed: { type: ["integer", "string"] },
-        frameNumber: { type: ["integer", "string"] },
+        aperature: { type: "integer" },
+        shutterSpeed: { type: "string" },
+        frameNumber: { type: "integer" },
         location: { type: "json" },
         notes: { type: "string" },
       },

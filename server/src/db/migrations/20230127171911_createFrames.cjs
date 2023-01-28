@@ -13,8 +13,8 @@ exports.up = async (knex) => {
     console.log(`Creating ${tableName}`);
     return knex.schema.createTable(tableName, (table) => {
       table.bigIncrements("id").notNullable();
-      table.float("aperature").notNullable();
-      table.string("shutterSpeed");
+      table.integer("aperature").notNullable();
+      table.string("shutterSpeed").notNullable();
       table.integer("frameNumber");
       table.string("notes")
       table.json("location")
